@@ -25,7 +25,7 @@ export default {
     },
     computed: {
         usuarioEstarLogado() {
-            return Boolean(localStorage.getItem('token'))
+            return Boolean(this.$store.state.token)
     }
   }
 }
